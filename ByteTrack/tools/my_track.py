@@ -32,7 +32,7 @@ def make_parser():
     parser.add_argument("-n", "--name", type=str, default=None, help="model name")
 
     parser.add_argument(
-        "--path", default="/home/workspace/ByteTrack/videos/palace.mp4", help="path to images or video"
+        "--path", default="/home/jamil/files/Git/myByteTrack/ByteTrack/videos/palace.mp4", help="path to images or video"
     )
     parser.add_argument("--camid", type=int, default=0, help="webcam demo camera id")
     parser.add_argument(
@@ -256,7 +256,7 @@ def imageflow_demo(predictor, vis_folder, current_time, args):
         ret_val, frame = cap.read()
         if ret_val:
             
-            outputs, img_info = predictor.inference(frame, timer)
+            outputs, img_info = predictor.inference(frame, timer)  # predictor的作用是输入一个坐标，预测下一个坐标在哪里
             tracker.isyolox=(predictor.exp._model == "yolox")
             # print(outputs[0])
             if outputs[0] is not None:

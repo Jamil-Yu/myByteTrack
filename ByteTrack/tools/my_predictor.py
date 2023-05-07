@@ -38,6 +38,7 @@ class Predictor(object):
         self.img_path=exp.img_path
 
     def inference(self, img, timer):
+        # predictor 就是yolo8/yolox, 也就是detector部分
         img_info = {"id": 0}
         if isinstance(img, str):
             img_info["file_name"] = os.path.basename(img)

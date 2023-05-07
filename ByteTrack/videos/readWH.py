@@ -1,7 +1,7 @@
 import cv2
 
  
-video_path = "/home/workspace/ByteTrack/videos/MOT17.webm"
+video_path = "/home/jamil/files/Git/myByteTrack/ByteTrack/videos/MOT17.webm"
 
  
 cap = cv2.VideoCapture(video_path)

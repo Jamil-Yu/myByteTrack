@@ -9,6 +9,8 @@ from yolox.exp import Exp as MyExp
 
 from detectors.ultralytics import YOLO
 
+# 用于和yolox适配
+
 model_sets=[
     'yolov8',
     'yolox'
@@ -37,7 +39,7 @@ class Exp(MyExp):
             self.img_path=args.path
             self._model=args.detector
             if args.detector=='yolov8':
-                self.optional_detector=YOLO('/home/workspace/ByteTrack/detectors/yolov8m.pt')
+                self.optional_detector=YOLO('/home/jamil/files/Git/myByteTrack/ByteTrack/detectors/yolov8m.pt')
         else:
             assert False, "detector model not in {}".format(model_sets)
 
