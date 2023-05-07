@@ -262,7 +262,7 @@ class DetectionThread(QtCore.QThread):
         frame_id = 0
         results = []
         dialog.close()
-        # 开始检测
+        # 开始检测:
         while True:
             if frame_id % 1 == 0:
                 logger.info('Processing frame {} ({:.2f} fps)'.format(frame_id, 1. / max(1e-5, timer.average_time)))
