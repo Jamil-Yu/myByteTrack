@@ -34,9 +34,13 @@ python3 tools/Main_Window.py
 
 
 
-## 文件解释
+## 解释
 my_track.py为main文件
+
 my_exp.py为配置文件
+
 bytetrack_x_mot20.tar为训练好的模型
+
 /home/workspace/ByteTrack/videos/mot17.mp4 为视频路径
+
 yolov8 为detector,目前支持yolox,yolov8
